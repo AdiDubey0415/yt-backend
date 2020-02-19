@@ -56,7 +56,7 @@ router.delete("/all", async (req, res, next) => {
 });
 
 // To delete one item from search history
-router.delete("/:id", async (req, res, next) => {
+router.delete("/id/:id", async (req, res, next) => {
   try {
     console.log("req.body.params", req.params);
     let { id } = req.params;
